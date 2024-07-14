@@ -1,0 +1,49 @@
+<div class="ngmodel-wrapper">
+    <form>
+        <table class="tbl-form">
+            <tbody>
+                <tr>
+                    <td class="label">
+                    Full name
+                    </td>
+                    <td>
+                    <input class="input" [(ngModel)]="formModel.fullName" [ngModelOptions]="{standalone: true}">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                    Address
+                    </td>
+                    <td>
+                    <input class="input" [(ngModel)]="formModel.address" [ngModelOptions]="{standalone: true}">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                    Contact Number
+                    </td>
+                    <td>
+                    <input class="input" [(ngModel)]="formModel.contactNumber" [ngModelOptions]="{standalone: true}">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                    Email
+                    </td>
+                    <td>
+                    <input class="input" [(ngModel)]="formModel.email" [ngModelOptions]="{standalone: true}">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                    Gender
+                    </td>
+                    <td>
+                    <input class="input" [(ngModel)]="formModel.gender" [ngModelOptions]="{standalone: true}">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="button" type="button" (click)="submit()">Submit</button>
+    </form>
+</div>

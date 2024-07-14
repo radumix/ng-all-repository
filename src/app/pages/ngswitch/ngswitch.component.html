@@ -1,0 +1,11 @@
+<div class="ngswitch-wrapper" *ngFor="let item of pair">
+    <div class="switch" [ngSwitch]="item">
+        <div class="blue" *ngSwitchCase="1">Blue</div>
+        <div class="green" *ngSwitchCase="2">Green</div>
+        <div class="red" *ngSwitchCase="3">Red</div>
+        <div class="yellow" *ngSwitchCase="4">Yellow</div>
+        <div class="pink" *ngSwitchCase="5">Pink</div>
+       
+    </div>
+</div>
+<button type="button" (click)="pickPair()" class="btn-switch">Switch</button>

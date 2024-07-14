@@ -1,0 +1,13 @@
+<div class="attribute">
+    <div class="content">
+        <div class="windowL">  
+
+        <textarea cols="50" rows="4" [(ngModel)]="myString"></textarea>
+        
+                <button type="button" class="button" (click)="add()">Add</button>     
+        </div>
+        <div class="windowR">
+         <app-string [paramString]="paramString"></app-string>
+        </div>
+    </div>
+</div>

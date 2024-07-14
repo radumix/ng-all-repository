@@ -1,0 +1,10 @@
+<div class="ngif-wrapper">
+<div class="blue" *ngIf="input === 'blue'"></div>
+<div class="green" *ngIf="input === 'green'"></div>
+<div class="red" *ngIf="input === 'red'"></div>
+<div class="yellow" *ngIf="input === 'yellow'"></div>
+<div class="pink" *ngIf="input === 'pink'"></div>
+
+</div>
+<input class="input" [(ngModel)]="selector" placeholder="Type here">
+<button class="button" (click)="showBox()">Show Box</button>
